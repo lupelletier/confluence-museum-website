@@ -1,0 +1,228 @@
+/* BOUCLES */
+
+//Color
+    $colours: (
+        "primary": $primary,
+        "secondary": $secondary,
+        "blue": $blue,
+        "orange": $orange,
+        "pink": $pink,
+        "gray": $gray,
+    );
+
+    @each $property, $value in $colours {
+        .bg-#{$property} {
+            background-color: $value;
+        }
+        .text-#{$property} {
+            color: $value;
+        }
+        .btn-bg-#{$property} {
+            background-color: $value;
+        }
+        .icon-#{$property} {
+            color: $value;
+        }
+    }
+
+$sizes: (
+    0: 0,
+    10: 10px,
+    20: 20px,
+    30: 30px,
+    40: 40px,
+    50: 50px,
+
+);
+
+@each $property, $value in $sizes {
+    .p-#{$property} {
+        padding: $value;
+    }
+    .m-#{$property} {
+        margin: $value;
+    }
+    .m-b-#{$property} {
+        margin-bottom: $value;
+    }
+}
+
+
+// Margins
+
+    // margin top, bottom, left, right
+    $margins: (
+        0: 0px,
+        10: 10px,
+        20: 20px,
+        30: 30px,
+        40: 40px,
+        50: 50px,
+        60: 60px,
+        70: 70px,
+        80: 80px
+    );
+    @each $margin, $value in $margins {
+        .m-#{$margin} {
+            margin: $value;
+        }
+        .m-t-#{$margin}{
+            margin-top: $value;
+        }
+        .m-b-#{$margin}{
+            margin-bottom: $value;
+        }
+        .m-l-#{$margin}{
+            margin-left: $value;
+        }
+        .m-r-#{$margin}{
+            margin-right: $value;
+        }
+    };
+
+    // padding top, bottom, left, right
+    $paddings: (
+        0: 0px,
+        10: 10px,
+        20: 20px,
+        30: 30px,
+        40: 40px,
+        50: 50px,
+        60: 60px,
+        70: 70px,
+        80: 80px,
+        90: 90px
+    );
+    @each $padding, $value in $paddings {
+        .p-#{$padding} {
+            padding: $value;
+        }
+        .p-t-#{$padding}{
+            padding-top: $value;
+        }
+        .p-b-#{$padding}{
+            padding-bottom: $value;
+        }
+        .p-l-#{$padding}{
+            padding-left: $value;
+        }
+        .p-r-#{$padding}{
+            padding-right: $value;
+        }
+    };
+    
+// sizes
+
+    // height
+
+    $heights: (
+        50: 50px,
+        100: 100px,
+        150: 150px,
+        200: 200px,
+        250: 250px,
+        300: 300px,
+        350: 350px,
+        400: 400px,
+        450: 450px,
+        500: 500px,
+        550: 550px,
+        600: 600px,
+        650: 650px,
+        700: 700px,
+        750: 750px,
+        800: 800px
+    );
+    @each $height, $value in $heights {
+        .height-#{$height}{
+            height: $value;
+        }
+    }
+
+    // width
+
+    $widths: (
+        100-percent: 100%,
+        90-percent: 90%,
+        80-percent: 80%,
+        70-percent: 70%,
+        60-percent: 60%,
+        50-percent: 50%,
+        40-percent: 40%,
+        30-percent: 30%,
+        25-percent: 25%,
+        20-percent: 20%,
+
+    );
+
+    @each $width, $value in $widths {
+        .w-#{$width}{
+            width: $value;
+        }
+    }
+
+// FONT
+    // font weight
+
+    $font-weight: (
+        thin: 100,
+        extralight: 200,
+        light: 300,
+        regular: 400,
+        medium: 500,
+        semibold: 600,
+        bold: 700,
+        extrabold: 800,
+    );
+    @each $weight, $value in $font-weight {
+        .text-#{$weight}{
+            font-weight: $value;
+        }
+    }
+
+    // font size
+
+    $size-font: (
+        0_9: 0.9rem,
+        1: 1rem,
+        2: 2rem,
+        3: 3rem,
+        4: 4rem,
+        5: 5rem,
+        6: 6rem,
+        7: 7rem
+    );
+    @each $size, $value in $size-font {
+        .size-#{$size}{
+            font-size: $value;
+        }
+    }
+    //letter spaces
+    $letter-spaces: (
+        -1: -1px,
+        0: 0px,
+        1: 1px
+    );
+    @each $letter-space, $value in $letter-spaces {
+        .letter-space-#{$letter-space}{
+            letter-spacing: $value;
+        }
+    }
+
+    //position
+
+    $positions: (
+        fixed: fixed,
+        absolute: absolute,
+        relative: relative,
+    );
+    @each $position, $value in $positions {
+        .position-#{$position}{
+            position: $value;
+        }
+    }
+
+    //button
+
+
+    
