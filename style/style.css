@@ -40,7 +40,7 @@ h3 {
 .uppercase {
   text-transform: uppercase;
   font-size: small;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 p {
@@ -83,11 +83,6 @@ p {
 
 .flex-column {
   flex-direction: column;
-}
-
-.expo {
-  height: 100%;
-  width: 100%;
 }
 
 .flex-wrap {
@@ -241,6 +236,70 @@ p {
     flex-direction: column;
     align-items: baseline;
     margin: 0;
+  }
+}
+
+.exposition {
+  align-items: center;
+  width: 100%;
+}
+.exposition .element {
+  flex: 0 0 calc(33.3333333333% - 60px);
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 1023px) {
+  .exposition .element {
+    flex-direction: column;
+    flex: 0 0 calc(50% - 60px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .exposition .element {
+    flex: 0 0 calc(100% - 60px);
+    justify-content: center;
+  }
+}
+.exposition .expo-img {
+  margin-bottom: 5px;
+}
+.exposition .date {
+  align-items: center;
+}
+@media screen and (max-width: 1023px) {
+  .exposition .date {
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+}
+.exposition .date .date-element .date-divider {
+  border-top: 1.5px solid rgb(0, 0, 0);
+  width: 25px;
+  border-radius: 5px;
+  rotate: -10deg;
+}
+@media screen and (max-width: 1023px) {
+  .exposition .date .date-element {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .exposition .date .date-element .date-divider {
+    rotate: 100deg;
+    margin-bottom: -1px;
+  }
+  .exposition .date .date-element .large {
+    font-size: 30px;
+    margin-right: 5px;
+    margin-bottom: -1px;
+  }
+  .exposition .date .date-element .uppercase {
+    font-weight: 400;
+    width: 60%;
+    margin-bottom: -1px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .exposition {
+    flex: 0 0 calc(100% - 60px);
   }
 }
 

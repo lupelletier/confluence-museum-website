@@ -35,10 +35,13 @@ h3{
     margin-top: 0px;
 
 }
+
+
+
 .uppercase{
     text-transform: uppercase;
     font-size: small;
-    font-weight: 600;
+    font-weight: 500;
 }
 p{
     font-size: 15px;
@@ -77,12 +80,6 @@ p{
 .flex-column {
     flex-direction: column;
 }
-
-.expo{
-    height: 100%;
-    width: 100%;
-}
-
 .flex-wrap {
     flex-wrap: wrap;
 
